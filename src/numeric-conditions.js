@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
 // TODO: Implement the functions below to make the tests pass
 
 const ARRAY_ONE = []
