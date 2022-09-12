@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 // TODO: Implement the functions below to make the tests pass
 
 const ARRAY_ONE = []
@@ -15,7 +17,7 @@ const NUM_ONE = 92837
 const NUM_TWO = 92827
 
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
-let answerThree
+let answerThreegit
 
 const NUMBERS = [67, 2039, 17, 501, 98, 139, 21]
 
