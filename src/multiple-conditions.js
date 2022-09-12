@@ -22,9 +22,9 @@ const STR = null
 // to verify your code is correct
 let answerTwo
 
-if (STR === 'Hello' || STR === 'Goodbye'){
-  answerTwo = true 
-} else if (STR != 'Hello' || STR != 'Goodbye') {
+if (STR === 'Hello' || STR === 'Goodbye') {
+  answerTwo = true
+} else if (STR !== 'Hello' || STR !== 'Goodbye') {
   answerTwo = false
 }
 
