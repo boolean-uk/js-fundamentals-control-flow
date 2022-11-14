@@ -27,7 +27,7 @@
 
 ## Running tests
 
-- To verify your solutions, run the test suite by running the `npx jasmine` command followed by the path to the corresponding test file for each `src/*.js` file above, eg:
+- To verify your solutions, run the test suite by running the `npx jasmine` command followed by the path to the corresponding test file for each `s.rc/*js` file above, eg:
 
     `npx jasmine spec/boolean-conditions.spec.js`
 
