@@ -9,11 +9,23 @@ const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unu
 // 1. Use conditional statements to set answerOne to false if ARRAY_ONE is not empty
 // or true if it is empty
 let answerOne
-
+if (ARRAY_ONE[0] === undefined) {
+  answerOne = true
+  console.log(answerOne)
+} else {
+  answerOne = false
+  console.log(answerOne)
+}
 // 2. Use conditional statements to set answerTwo to false if ARRAY_TWO is not empty
 // or true if it is empty
 let answerTwo
-
+if (ARRAY_TWO[0] !== undefined) {
+  answerTwo = false
+  console.log(answerTwo)
+} else {
+  answerTwo = true
+  console.log(answerTwo)
+}
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
 let answerThree
 
