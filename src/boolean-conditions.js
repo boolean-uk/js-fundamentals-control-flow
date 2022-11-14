@@ -6,8 +6,25 @@ let didPass
 // is false
 let answer
 
+if (didPass) {
+  answer = 'Well done, you passed!'
+} else {
+  answer = 'Sorry, try again!'
+}
+
+console.log(answer)
+
 // 2. When you're done and the test passes, changing didPass to the opposite boolean
 // and run the test again to make sure it still passes
+didPass = true
+
+if (didPass) {
+  answer = 'Well done, you passed!'
+} else {
+  answer = 'Sorry, try again!'
+}
+
+console.log(answer)
 
 // Don't change the code below this line
 module.exports = {
