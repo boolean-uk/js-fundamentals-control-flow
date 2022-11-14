@@ -20,10 +20,9 @@ const STR = 'Hello'
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
 let answerTwo
-if ( STR === 'Hello' || 'Goodbye') {
+if (STR === 'Hello' || 'Goodbye') {
   answerTwo = true
-} 
-else if ( STR !== 'Hello' || 'Goodbye') {
+} else if (STR !== 'Hello' || 'Goodbye') {
   answerTwo = false
 }
 
