@@ -6,9 +6,9 @@ const didPass = false
 // is false
 let answer
 if (didPass === true) {
-  answer = console.log('Well done, you passed!')
+  answer = 'Well done, you passed!'
 } else if (didPass === false) {
-  answer = console.log('Sorry, try again!')
+  answer = 'Sorry, try again!'
 }
 
 // 2. When you're done and the test passes, changing didPass to the opposite boolean
