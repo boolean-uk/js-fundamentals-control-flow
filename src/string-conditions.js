@@ -67,7 +67,11 @@ const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
 if (STR_EIGHT.length % 2 === 0) {
-  const middle = STR_EIGHT.slice(1, 3)
+  const m1 = STR_EIGHT.length / 2 - 1
+  console.log(m1)
+  const m2 = STR_EIGHT.length / 2 + 1
+  console.log(m2)
+  const middle = STR_EIGHT.slice(m1, m2)
   console.log(middle)
   answerSeven = middle
   console.log(answerSeven)
