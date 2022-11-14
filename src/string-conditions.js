@@ -30,6 +30,24 @@ if (STR_THREE.length > STR_FOUR.length) {
 const STR_FIVE = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerFour
+let count1 = 0
+for (let each = 0; each < STR_FIVE.length; each++) {
+  if (
+    STR_FIVE[each].toLowerCase() === 'a' ||
+    STR_FIVE[each].toLowerCase() === 'e' ||
+    STR_FIVE[each].toLowerCase() === 'i' ||
+    STR_FIVE[each].toLowerCase() === 'o' ||
+    STR_FIVE[each].toLowerCase() === 'u'
+  ) {
+    count1++
+  }
+}
+if (count1 % 2 === 0) {
+  answerFour = true
+} else {
+  answerFour = false
+}
+console.log('AnswerFour =', answerFour)
 
 // Use a combination of a loop and conditional statements to set answerFive
 // to false if STR_SIX has an odd number of vowels, or true if it has an
@@ -37,6 +55,24 @@ let answerFour
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
 let answerFive
+let count2 = 0
+for (let each = 0; each < STR_FIVE.length; each++) {
+  if (
+    STR_FIVE[each].toLowerCase() === 'a' ||
+    STR_FIVE[each].toLowerCase() === 'e' ||
+    STR_FIVE[each].toLowerCase() === 'i' ||
+    STR_FIVE[each].toLowerCase() === 'o' ||
+    STR_FIVE[each].toLowerCase() === 'u'
+  ) {
+    count2++
+  }
+}
+if (count2 % 2 !== 0) {
+  answerFive = true
+} else {
+  answerFive = false
+}
+console.log('AnswerFive =', answerFive)
 
 // Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
@@ -54,7 +90,6 @@ let answerSeven
 if (STR_EIGHT.length % 2 === 0) {
   answerSeven = STR_EIGHT[STR_EIGHT.length / 2 - 1]
   answerSeven = answerSeven + STR_EIGHT[STR_EIGHT.length / 2]
-  console.log(answerSeven)
 }
 
 // Set answerEight to the appropriate season based on what MONTH is set to
