@@ -47,7 +47,6 @@ if (count1 % 2 === 0) {
 } else {
   answerFour = false
 }
-console.log('AnswerFour =', answerFour)
 
 // Use a combination of a loop and conditional statements to set answerFive
 // to false if STR_SIX has an odd number of vowels, or true if it has an
@@ -72,7 +71,6 @@ if (count2 % 2 !== 0) {
 } else {
   answerFive = false
 }
-console.log('AnswerFive =', answerFive)
 
 // Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
