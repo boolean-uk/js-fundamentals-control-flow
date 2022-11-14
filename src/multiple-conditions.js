@@ -16,7 +16,7 @@ if (NUM >= LOWER && NUM <= UPPER) {
 }
 
 // Task 2
-const STR = null
+const STR = 'Goodbye'
 
 // 2. Use conditional statements to set the answerTwo variable below to true
 // if the STR variable is 'Hello' or 'Goodbye'
@@ -24,6 +24,13 @@ const STR = null
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
 let answerTwo
+if (STR === 'Hello' || STR === 'Goodbye') {
+  answerTwo = true
+  console.log(answerTwo)
+} else {
+  answerTwo = false
+  console.log(answerTwo)
+}
 
 // Task 3
 const AGE = 0

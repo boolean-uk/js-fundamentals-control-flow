@@ -55,13 +55,23 @@ let answerFive
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
+if (STR_SEVEN.length % 2 === 1) {
+  const middle = (STR_SEVEN.length - 1) / 2
+  answerSix = STR_SEVEN[middle]
+  console.log(answerSix)
+}
 
 // Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
-
+if (STR_EIGHT.length % 2 === 0) {
+  const middle = STR_EIGHT.slice(1, 3)
+  console.log(middle)
+  answerSeven = middle
+  console.log(answerSeven)
+}
 // Set answerEight to the appropriate season based on what MONTH is set to
 //
 // For example, if MONTH is 'January', answerEight should be 'Winter'
@@ -77,7 +87,23 @@ let answerSeven
 const MONTH = 'January'
 
 let answerEight
-
+if (MONTH === 'January' || MONTH === 'December' || MONTH === 'February') {
+  answerEight = 'Winter'
+  console.log(answerEight)
+} else if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
+  answerEight = 'Spring'
+  console.log(answerEight)
+} else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
+  answerEight = 'Summer'
+  console.log(answerEight)
+} else if (
+  MONTH === 'September' ||
+  MONTH === 'October' ||
+  MONTH === 'November'
+) {
+  answerEight = 'Autumn'
+  console.log(answerEight)
+}
 module.exports = {
   answerOne,
   answerTwo,
