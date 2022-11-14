@@ -28,9 +28,23 @@ if (ARRAY_TWO[0] !== undefined) {
 }
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
 let answerThree
+if (NUM_ONE > NUM_TWO) {
+  answerThree = true
+  console.log(answerThree)
+} else {
+  answerThree = false
+  console.log(answerThree)
+}
 
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
+if (ARRAY_TWO.includes(NUM_ONE) | ARRAY_TWO.includes(NUM_TWO)) {
+  answerFour = true
+  console.log(answerFour)
+} else {
+  answerFour = false
+  console.log(answerFour)
+}
 
 // Don't edit the code below this line
 module.exports = {

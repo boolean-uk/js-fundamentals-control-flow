@@ -7,6 +7,13 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 // to be true if the NUM variable is more than or equal to the LOWER variable
 // AND is less than or equal to the UPPER variable
 let answerOne
+if (NUM >= LOWER && NUM <= UPPER) {
+  answerOne = true
+  console.log(answerOne)
+} else {
+  answerOne = false
+  console.log(answerOne)
+}
 
 // Task 2
 const STR = null
