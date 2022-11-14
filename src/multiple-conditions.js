@@ -22,7 +22,7 @@ const STR = 'Hello'
 let answerTwo
 if (STR === 'Hello' || STR === 'Goodbye') {
   answerTwo = true
-} else  {
+} else {
   answerTwo = false
 }
 
