@@ -36,7 +36,10 @@ const NUMBERS = [67, 2039, 17, 501, 98, 139, 21]
 
 // 4. Use a combination of a loop and conditional statements to set answerFour
 // to the lowest number in the NUMBERS array
-// let answerFour ***WAITING ON LESSON
+
+const orderedNumbers = NUMBERS.sort(function(a, b) { return a - b})
+const answerFour = orderedNumbers[0]
+
 
 // Don't edit the code below this line
 module.exports = {

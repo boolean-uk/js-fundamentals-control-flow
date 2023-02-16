@@ -28,15 +28,30 @@ if(STR_THREE.length > STR_FOUR.length) {
 // to false if STR_FIVE has an odd number of vowels, or true if it has an
 // even number
 const STR_FIVE = 'Alex'
+let answerFour
 
-//let answerFour ***WAITING FOR LOOP LESSON
+if (!STR_FIVE.length % 2 === 0) {
+  answerFour = true
+}else if (STR_FIVE.length % 2 === 0) {
+  answerFour = false
+}
+
+
 
 // Use a combination of a loop and conditional statements to set answerFive
 // to false if STR_SIX has an odd number of vowels, or true if it has an
 // even number
 const STR_SIX = 'Joanna'
+let answerFive
 
-//let answerFive ***WAITING FOR LOOP LESSON
+const Vowels =  STR_SIX.match(/[aeiou]/gi);
+const VowelCount = Vowels.length
+
+if (VowelCount % 2 === 0) {
+  answerFive = true
+}else if (!VowelCount % 2 === 0) {
+  answerFive = false
+}
 
 // Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
@@ -79,15 +94,14 @@ if (['December', 'January', 'February'].includes(MONTH)) {
   answerEight = 'Summer'
 } else if (['March', 'April', 'May'].includes(MONTH)) {
   answerEight = 'Spring'
-} 
-console.log(answerEight)
+}
 
 module.exports = {
   answerOne,
   answerTwo,
   answerThree,
-  //answerFour, ***
-  //answerFive, ***
+  answerFour,
+  answerFive,
   answerSix,
   answerSeven,
   MONTH,
