@@ -28,7 +28,7 @@ if (STR_THREE.length > STR_FOUR.length) {
 
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
-let answerFour = true
+const answerFour = true
 
 // 5. Use conditional statements to set answerFive to true
 // if STR_SIX starts and ends with the same character, regardless of case
