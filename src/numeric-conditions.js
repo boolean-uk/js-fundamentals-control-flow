@@ -30,11 +30,14 @@ else {answerThree = false}
 console.log(answerThree)
 
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
+
 let answerFour
-if(ARRAY_TWO.indexOf(NUM_ONE) !== -1 || ARRAY_TWO.indexOf(NUM_TWO) !== -1) {
-  answerFour = true
-}
+answerFour =
+  ARRAY_TWO.includes(NUM_ONE) || ARRAY_TWO.includes(NUM_TWO)
+    ? (answerFour = true)
+    : (answerFour = false)
 console.log(answerFour)
+
 
 // Don't edit the code below this line
 module.exports = {
