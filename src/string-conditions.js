@@ -1,13 +1,17 @@
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
-let answerOne = true
+if (STR_ONE === 'Hello') {
+  answerOne = true
+}
 console.log(answerOne)
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
-let answerTwo = true
+if (STR_TWO !== 'Hello') {
+  answerTwo = true
+}
 console.log(answerTwo)
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
@@ -15,7 +19,8 @@ console.log(answerTwo)
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
-let answerThree = true
+let answerThree
+
 console.log(answerThree)
 
 // 4. Use conditional statements to set answerFour to true
