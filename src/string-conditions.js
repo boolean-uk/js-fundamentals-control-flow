@@ -31,9 +31,12 @@ let answerFive
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
-const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
+const STR_SEVEN = 'Kaylay' // eslint-disable-line no-unused-vars
 
 let answerSix
+if (STR_SEVEN % 2 !== 0) {
+  console.log(`number is odd`)
+}
 
 // 7. Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
@@ -54,6 +57,10 @@ let answerSeven
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
 const MONTH = 'January'
+
+if (MONTH === 'January') {
+  console.log('winning')
+}
 
 let answerEight
 
