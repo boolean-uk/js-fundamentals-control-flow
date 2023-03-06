@@ -62,7 +62,7 @@ if (
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
-const STR_SEVEN = 'Kaylay' // eslint-disable-line no-unused-vars
+const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
 if (STR_SEVEN.length % 2 !== 0) {
