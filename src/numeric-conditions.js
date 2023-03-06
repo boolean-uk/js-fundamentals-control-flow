@@ -2,7 +2,7 @@
 const NUM_ONE = 92837 // eslint-disable-line no-unused-vars
 const NUM_TWO = 92827 // eslint-disable-line no-unused-vars
 const ARRAY_ONE = [] // eslint-disable-line no-unused-vars
-const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unused-vars
+const ARRAY_TWO = ['Hello', 'Conditions'] // eslint-disable-line no-unused-vars
 
 // TODO: Implement the tasks below to make the tests pass
 
@@ -32,6 +32,15 @@ if (NUM_ONE > NUM_TWO) {
 }
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
+ARRAY_TWO.forEach((element) => {
+  if (element === NUM_ONE || element === NUM_TWO) {
+    answerFour = true
+    console.log(answerFour, NUM_ONE, NUM_TWO)
+  } else {
+    answerFour = false
+    console.log(answerFour, NUM_ONE, NUM_TWO)
+  }
+})
 
 // Don't edit the code below this line
 module.exports = {
