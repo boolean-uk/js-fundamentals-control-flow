@@ -1,13 +1,19 @@
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
-let answerOne = true
+let answerOne
+if(STR_ONE === 'Hello') {
+  answerOne = true
+}
 console.log(answerOne)
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
-let answerTwo = true
+let answerTwo
+if(STR_TWO !== 'Hello') {
+  answerTwo = true
+}
 console.log(answerTwo)
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
@@ -15,7 +21,10 @@ console.log(answerTwo)
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
-let answerThree = true
+let answerThree
+if(STR_THREE.length > STR_FOUR.length) {
+  answerThree = true
+}
 console.log(answerThree)
 
 // 4. Use conditional statements to set answerFour to true
@@ -23,7 +32,11 @@ console.log(answerThree)
 
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
-let answerFour = true
+let answerFour
+if(STR_FIVE.charAt(0).toUpperCase() === STR_FIVE.charAt(STR_FIVE.length - 1).toUpperCase()
+) {
+  answerFour = true
+}
 console.log(answerFour)
 
 // 5. Use conditional statements to set answerFive to true
@@ -31,21 +44,35 @@ console.log(answerFour)
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive = false
+let answerFive
+if (
+  STR_SIX.charAt(0).toUpperCase() ===
+  STR_SIX.charAt(STR_SIX.length - 1).toUpperCase()
+) {
+  answerFive = true 
+} else {
+  answerFive = false
+} 
 console.log(answerFive)
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
-let answerSix = 'y'
-console.log(answerSix)
+let answerSix 
+if (STR_SEVEN.length % 2 !== 0) {
+  answerSix = STR_SEVEN.charAt((STR_SEVEN.length - 1) / 2)
+  console.log(answerSix)
+}
 
 // 7. Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
-let answerSeven = 'le'
+let answerSeven
+if(STR_EIGHT.length % 2 === 0) {
+  answerSeven = STR_EIGHT[(STR_EIGHT.length / 2) - 1] + STR_EIGHT[STR_EIGHT.length / 2]
+}
 console.log(answerSeven)
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
@@ -60,11 +87,21 @@ console.log(answerSeven)
 // December to February: Winter
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
-const MONTH = 'April'
+const MONTH = 'September'
 
-let answerEight = 'Spring'
+let answerEight 
+if(MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
+  answerEight = 'Spring'
+}
+else if(MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
+  answerEight = 'Summer'
+}
+else if(MONTH === 'September' || MONTH === 'October' || MONTH === 'November') {
+  answerEight = 'Autumn'
+} else {
+  answerEight = 'Winter'
+}
 console.log(answerEight)
-
 module.exports = {
   answerOne,
   answerTwo,
