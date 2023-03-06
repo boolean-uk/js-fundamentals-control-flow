@@ -1,16 +1,15 @@
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
-let answerOne = (STR_ONE === 'Hello')
+const answerOne = STR_ONE === 'Hello'
 console.log(answerOne)
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
-if (STR_TWO === 'Hello'){
+if (STR_TWO === 'Hello') {
   answerTwo = false
-}
-else {
+} else {
   answerTwo = true
 }
 console.log(answerTwo)
@@ -20,7 +19,7 @@ console.log(answerTwo)
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
-let answerThree = STR_THREE.length > STR_FOUR.length
+const answerThree = STR_THREE.length > STR_FOUR.length
 console.log(answerThree)
 
 // if (STR_THREE.length > STR_FOUR.length){
@@ -36,7 +35,7 @@ console.log(answerThree)
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 const firstLetter = STR_FIVE[0]
 const lastLetter = STR_FIVE[STR_FIVE.length - 1]
-let answerFour = firstLetter.toLowerCase() === lastLetter.toLowerCase()
+const answerFour = firstLetter.toLowerCase() === lastLetter.toLowerCase()
 console.log('answer four', answerFour)
 
 // 5. Use conditional statements to set answerFive to true
@@ -44,7 +43,8 @@ console.log('answer four', answerFour)
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive = STR_SIX[0].toLowerCase() === STR_SIX[STR_SIX.length - 1].toLowerCase()
+const answerFive =
+  STR_SIX[0].toLowerCase() === STR_SIX[STR_SIX.length - 1].toLowerCase()
 console.log('answer five: ', answerFive)
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
@@ -52,10 +52,9 @@ console.log('answer five: ', answerFive)
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
-if ((STR_SEVEN.length % 2) === 1){
+if (STR_SEVEN.length % 2 === 1) {
   answerSix = STR_SEVEN[2]
-}
-else {
+} else {
   console.log('try again')
 }
 console.log('answer for six: ', answerSix)
@@ -64,6 +63,10 @@ console.log('answer for six: ', answerSix)
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven = STR_EIGHT[1] + STR_EIGHT[2]
+}
+console.log(answerSeven)
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
 //
@@ -80,6 +83,17 @@ let answerSeven
 const MONTH = 'January'
 
 let answerEight
+if (MONTH === ('January' || 'February' || 'December')) {
+  answerEight = 'Winter'
+} else if (MONTH === ('March' || 'April' || 'May')) {
+  answerEight = 'Spring'
+} else if (MONTH === ('June' || 'July' || 'August')) {
+  answerEight = 'Summer'
+} else if (MONTH === ('September' || 'October' || 'November')) {
+  answerEight = 'Autumn'
+}
+console.log(answerEight)
+console.log(MONTH)
 
 module.exports = {
   answerOne,

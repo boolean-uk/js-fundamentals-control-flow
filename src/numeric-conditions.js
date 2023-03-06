@@ -11,8 +11,7 @@ const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unu
 let answerOne
 if (ARRAY_ONE.length === 0) {
   answerOne = true
-}
-else {
+} else {
   answerOne = false
 }
 console.log(answerOne)
@@ -21,17 +20,17 @@ console.log(answerOne)
 let answerTwo
 if (ARRAY_TWO.length === 0) {
   answerTwo = true
-}
-else {
+} else {
   answerTwo = false
 }
 console.log(answerTwo)
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
-let answerThree = NUM_ONE > NUM_TWO
+const answerThree = NUM_ONE > NUM_TWO
 console.log(answerThree)
 
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
-let answerFour = (ARRAY_TWO.indexOf(NUM_ONE) || ARRAY_TWO.indexOf(NUM_TWO)) >= 0
+const answerFour =
+  (ARRAY_TWO.indexOf(NUM_ONE) || ARRAY_TWO.indexOf(NUM_TWO)) >= 0
 
 console.log(answerFour)
 
