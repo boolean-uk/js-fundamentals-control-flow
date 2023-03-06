@@ -64,7 +64,13 @@ console.log('answer for six: ', answerSix)
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
-
+if ((STR_EIGHT.length % 2) === 0){
+  answerSeven = STR_EIGHT[1] + STR_EIGHT[2]
+}
+else{
+  console.log('wrong answer bud')
+}
+console.log('answer to seven is: ', answerSeven)
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
 //
 // For example, if MONTH is 'January', answerEight should be 'Winter'
@@ -77,9 +83,21 @@ let answerSeven
 // December to February: Winter
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
-const MONTH = 'January'
+const MONTH = 'July'
 
 let answerEight
+if ((MONTH === 'December') || (MONTH === 'January') || (MONTH === 'February')){
+  answerEight = 'Winter'
+} else if ((MONTH === 'March') || (MONTH === 'April') || (MONTH === 'May')) {
+  answerEight = 'Spring'
+} else if ((MONTH === 'June') || (MONTH === 'July') || (MONTH === 'August')) {
+  answerEight = 'Summer'
+} else if ((MONTH === 'September') || (MONTH === 'October') || (MONTH === 'November')) {
+  answerEight = 'Autumn'
+} else {
+  console.log("you dun' goofed")
+}
+console.log('answer to eight is: ', answerEight)
 
 module.exports = {
   answerOne,
