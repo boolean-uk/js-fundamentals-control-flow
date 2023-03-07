@@ -15,7 +15,7 @@ if (NUM >= LOWER && NUM <= UPPER) {
 }
 
 // Task 2
-const STR = `Hello`
+const STR = 'Hello'
 
 // 2. Use conditional statements to set the answerTwo variable below to true
 // if the STR variable is 'Hello' or 'Goodbye'

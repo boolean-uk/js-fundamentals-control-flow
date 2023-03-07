@@ -10,7 +10,7 @@ const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
 
-if (STR_TWO === !'Hello') {
+if (STR_TWO !== 'Hello') {
   answerTwo = true
 }
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
@@ -25,7 +25,6 @@ if (STR_THREE.length > STR_FOUR.length) {
 }
 // 4. Use conditional statements to set answerFour to true
 // if STR_FIVE starts and ends with the same character, regardless of case
-
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
 let answerFour
@@ -47,29 +46,29 @@ if (
   STR_SIX[0] === STR_SIX[STR_SIX.length - 1].toUpperCase()
 ) {
   answerFive = true
+} else {
+  answerFive = false
 }
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
+console.log()
 
-if (STR_SEVEN.length % 2 === !0) {
-  answerSix = STR_SEVEN[STR_SEVEN.length / 2]
+if (STR_SEVEN.length % 2 !== 0) {
+  answerSix = STR_SEVEN[STR_SEVEN.length / 2 - 0.5]
 }
 // 7. Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
-console.log(
-  STR_EIGHT[STR_EIGHT.length / 2 - 1],
-  STR_EIGHT[STR_EIGHT.length / 2]
-)
+const firstMid = STR_EIGHT[STR_EIGHT.length / 2 - 1]
+const secondMid = STR_EIGHT[STR_EIGHT.length / 2]
+console.log(`${firstMid}${secondMid}`)
 if (STR_EIGHT.length % 2 === 0) {
-  answerSeven = STR_EIGHT[STR_EIGHT.length / 2 - 1](
-    STR_EIGHT[STR_EIGHT.length / 2]
-  )
+  answerSeven = `${firstMid}${secondMid}`
 }
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
