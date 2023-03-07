@@ -68,9 +68,14 @@ console.log(answerSix)
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
-if (STR_EIGHT) {
-  answerSeven = STR_EIGHT[1] + STR_EIGHT[2]
+const eightLength = STR_EIGHT.length
+
+if (STR_EIGHT.length % 2 === 0) {
+  const charMidOne = STR_EIGHT[eightLength / 2 - 1]
+  const charMidTwo = STR_EIGHT[eightLength / 2]
+  answerSeven = `${charMidOne}${charMidTwo}`
 }
+console.log(answerSeven)
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
 //
