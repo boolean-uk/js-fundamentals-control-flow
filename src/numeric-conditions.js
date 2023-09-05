@@ -30,7 +30,7 @@ if (NUM_ONE > NUM_TWO) {
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
 if (
-  ARRAY_TWO.includes(NUM_ONE) === true ||
+  ARRAY_TWO.includes(NUM_ONE) === true &&
   ARRAY_TWO.includes(NUM_TWO) === false
 ) {
   answerFour = true
