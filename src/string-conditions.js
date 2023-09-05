@@ -2,11 +2,21 @@
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
+if (STR_ONE === 'Hello') {
+  answerOne = true
+}
+
+console.log('answerOne :>> ', answerOne)
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
+if (STR_TWO !== 'Hello') {
+  answerTwo = true
+}
+console.log('answerTwo :>> ', answerTwo);
+
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
 // longer than STR_FOUR
