@@ -43,18 +43,17 @@ const AGE = 0
 // 20+    | Adult
 let answerThree
 
-if (AGE >= 0 && AGE < 20) {
-  if (AGE === 0) {
-    answerThree = 'Baby'
-  }
-  if (AGE <= 4) {
-    console.log('todolater')
-  }
+if (AGE === 0) {
+  answerThree = 'Baby'
+} else if (AGE >= 1 && AGE <= 4) {
+  answerThree = 'Toddler'
+} else if (AGE >= 5 && AGE <= 12) {
+  answerThree = 'Child'
+} else if (AGE >= 13 && AGE <= 19) {
+  answerThree = 'Teenager'
 } else {
   answerThree = 'Adult'
 }
-
-console.log('test')
 
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
