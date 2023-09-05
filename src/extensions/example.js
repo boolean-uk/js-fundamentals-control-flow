@@ -22,3 +22,4 @@ module.exports = {
   a: sayByeee,
   b: doubleNumber
 }
+// checked the code, seems alright :D
