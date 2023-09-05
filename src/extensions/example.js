@@ -4,8 +4,8 @@
 // Input | Output
 // - | "Byeee, friend :)"
 
-function sayByeee() {
-  return 'Byeee, friend :)'
+const sayByeee = () => {
+  return `Byeee, friend :)`
 }
 
 // 2. Define a function that doubles (multiplies by 2) a number
@@ -13,7 +13,7 @@ function sayByeee() {
 // 1       | 2
 // 4       | 8
 
-function doubleNumber(num) {
+const doubleNumber = (num) => {
   return num * 2
 }
 
