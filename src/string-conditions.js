@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
