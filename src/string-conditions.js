@@ -15,8 +15,7 @@ let answerTwo
 if (STR_TWO !== 'Hello') {
   answerTwo = true
 }
-console.log('answerTwo :>> ', answerTwo);
-
+console.log('answerTwo :>> ', answerTwo)
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
 // longer than STR_FOUR
