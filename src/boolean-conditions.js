@@ -6,7 +6,7 @@ let didPass
 // is false
 let answer
 
-if (didPass !== false) {
+if (didPass === true) {
   answer = 'Well done, you passed!'
 } else {
   answer = 'Sorry, try again!'
@@ -14,7 +14,7 @@ if (didPass !== false) {
 console.log(answer)
 // 2. When you're done and the test passes, changing didPass to the opposite boolean
 // and run the test again to make sure it still passes
-if (!didPass !== false) {
+if (didPass === !true) {
   answer = 'Well done, you passed!'
 } else {
   answer = 'Sorry, try again!'
