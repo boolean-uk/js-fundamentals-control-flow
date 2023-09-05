@@ -42,7 +42,17 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 let answerThree
-
+ if (Age === 0) {
+  answerThree = 'Baby'
+ }else if (Age>= 1 && Age <=4) {
+  answerThree = Toddler
+ }else if (Age >= 5 && Age <= 12) {
+  answerThree = 'Child'
+ }else if (Age >= 13 && Age <= 19) {
+  answerThree = 'Teenager'
+ }else {
+  answerThree = 'Adult'
+ }
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
 
