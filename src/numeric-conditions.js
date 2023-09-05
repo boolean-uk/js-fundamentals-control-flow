@@ -2,7 +2,7 @@
 const NUM_ONE = 92837 // eslint-disable-line no-unused-vars
 const NUM_TWO = 92827 // eslint-disable-line no-unused-vars
 const ARRAY_ONE = [] // eslint-disable-line no-unused-vars
-const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unused-vars
+const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE, NUM_TWO] // eslint-disable-line no-unused-vars
 
 // TODO: Implement the tasks below to make the tests pass
 
