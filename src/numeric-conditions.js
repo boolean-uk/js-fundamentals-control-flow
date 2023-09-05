@@ -14,7 +14,7 @@ if (ARRAY_ONE.length !== 0) {
 } else {
   answerOne = true
 }
-console.log('answerOne :>> ', answerOne);
+console.log('answerOne :>> ', answerOne)
 
 if (ARRAY_ONE.length === 0) {
   answerOne = true
@@ -32,7 +32,7 @@ if (ARRAY_TWO.length !== 0) {
 } else {
   answerTwo = true
 }
-console.log('answerTwo :>> ', answerTwo);
+console.log('answerTwo :>> ', answerTwo)
 
 if (ARRAY_TWO.length === 0) {
   answerTwo = true
@@ -51,7 +51,7 @@ if (NUM_ONE > NUM_TWO) {
   answerThree = false
 }
 
-console.log(answerThree)
+console.log('answerThree :>>', answerThree)
 
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
@@ -62,7 +62,7 @@ if (ARRAY_TWO.includes(NUM_ONE) || ARRAY_TWO.includes(NUM_TWO)) {
   answerFour = false
 }
 
-console.log(answerFour)
+console.log('answerFour :>>', answerFour)
 
 // Don't edit the code below this line
 module.exports = {
