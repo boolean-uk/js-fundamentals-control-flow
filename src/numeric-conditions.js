@@ -29,11 +29,18 @@ if (NUM_ONE > NUM_TWO) {
 }
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
-if (ARRAY_TWO !== NUM_ONE || ARRAY_TWO !== NUM_TWO) {
+
+if (
+  ARRAY_TWO.includes(NUM_ONE) === true &&
+  ARRAY_TWO.includes(NUM_TWO) === false
+) {
   answerFour = true
 } else {
   answerFour = false
 }
+console.log(ARRAY_TWO.includes(NUM_ONE))
+console.log(ARRAY_TWO.includes(NUM_TWO))
+console.log(answerFour)
 // Don't edit the code below this line
 module.exports = {
   answerOne,
