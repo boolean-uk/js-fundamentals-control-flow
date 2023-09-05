@@ -2,11 +2,6 @@
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
-if (STR_ONE === 'Hello') {
-  answerOne = true
-}
-
-console.log('answerOne :>> ', answerOne)
 
 if (STR_ONE === 'Hello') {
   answerOne = true
@@ -14,16 +9,12 @@ if (STR_ONE === 'Hello') {
   answerOne = false
 }
 
-console.log(answerOne)
+console.log('answerOne :>> ', answerOne)
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
-if (STR_TWO !== 'Hello') {
-  answerTwo = true
-}
-console.log('answerTwo :>> ', answerTwo)
 
 if (STR_TWO !== 'Hello') {
   answerTwo = true
@@ -31,7 +22,7 @@ if (STR_TWO !== 'Hello') {
   answerTwo = false
 }
 
-console.log(answerTwo)
+console.log('answerTwo :>> ', answerTwo)
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
 // longer than STR_FOUR
@@ -64,7 +55,7 @@ if (
   answerFour = false
 }
 
-console.log(answerFour)
+console.log('answerFourr', answerFour)
 
 // 5. Use conditional statements to set answerFive to true
 // if STR_SIX starts and ends with the same character, regardless of case
