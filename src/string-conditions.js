@@ -59,7 +59,7 @@ if (STR_SEVEN.length % 2 === 1){
 console.log(answerSix)
 // 7. Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
-const STR_EIGHT = 'aayush' // eslint-disable-line no-unused-vars
+const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven;
 if(STR_EIGHT.length % 2 === 0 ){

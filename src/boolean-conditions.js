@@ -8,7 +8,7 @@ let answer;
 if(didPass === true){
   answer = 'Well done, you passed!'
 }else {
-  answer = 'Sorry,try again!'
+  answer = 'Sorry, try again!'
 }
 console.log(answer)
 // 2. When you're done and the test passes, changing didPass to the opposite boolean
@@ -18,7 +18,7 @@ let answer2;
 if(didPass2 === true){
   answer2 = 'Well done, you passed!'
 }else {
-  answer2 = 'Sorry,try again!'
+  answer2 = 'Sorry, try again!'
 }
 console.log(answer2)
 // Don't change the code below this line
