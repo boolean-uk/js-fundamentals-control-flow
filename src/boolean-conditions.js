@@ -19,7 +19,6 @@ console.log(answer); // Output the result
 
 
 
-
 // Don't change the code below this line
 module.exports = {
   didPass,
