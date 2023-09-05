@@ -47,13 +47,13 @@ const AGE = 14
 let answerThree
 if (AGE === 0) {
   answerThree = 'Baby'
-}else if (AGE > 0 && AGE <= 4) {
+} else if (AGE > 0 && AGE <= 4) {
   answerThree = 'Toddler'
-}else if(AGE > 4 && AGE <= 12) {
+} else if (AGE > 4 && AGE <= 12) {
   answerThree = 'Child'
-}else if(AGE > 13 && AGE <= 19) {
+} else if (AGE > 13 && AGE <= 19) {
   answerThree = 'Teenager'
-}else if(AGE > 19 ){
+} else if (AGE > 19) {
   answerThree = 'Adult'
 }
 console.log(answerThree)
