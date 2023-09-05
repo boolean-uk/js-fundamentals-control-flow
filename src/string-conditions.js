@@ -2,7 +2,7 @@
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
-if (STR_ONE !== 'hello'){
+if (STR_ONE !== 'hello') {
   answerOne = true
 }
 
@@ -10,7 +10,7 @@ if (STR_ONE !== 'hello'){
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
-if (STR_TWO !== 'hello'){
+if (STR_TWO !== 'hello') {
   answerTwo = true
 }
 
@@ -20,9 +20,8 @@ const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
 let answerThree
-if (STR_THREE.length > STR_FOUR.length){
-
-answerThree = true
+if (STR_THREE.length > STR_FOUR.length) {
+  answerThree = true
 }
 // 4. Use conditional statements to set answerFour to true
 // if STR_FIVE starts and ends with the same character, regardless of case
@@ -40,7 +39,7 @@ const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
 let answerFive
 if (STR_SIX[0].toLowerCase() !== STR_SIX[5].toLowerCase()) {
-  answerFive = false 
+  answerFive = false
 }
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
@@ -56,8 +55,8 @@ const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
 if (STR_EIGHT.length % 2 === 0) {
-  answerSeven = 
-  STR_EIGHT[STR_EIGHT.length / 2 - 1] + STR_EIGHT[STR_EIGHT.length / 2]
+  answerSeven =
+    STR_EIGHT[STR_EIGHT.length / 2 - 1] + STR_EIGHT[STR_EIGHT.length / 2]
 }
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
@@ -79,9 +78,17 @@ if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
   answerEight = 'Spring'
 } else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
   answerEight = 'Summer'
-} else if (MONTH === 'September' || MONTH === 'October' || MONTH === 'November') {
+} else if (
+  MONTH === 'September' ||
+  MONTH === 'October' ||
+  MONTH === 'November'
+) {
   answerEight = 'Autumn'
-} else if (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
+} else if (
+  MONTH === 'December' ||
+  MONTH === 'January' ||
+  MONTH === 'February'
+) {
   answerEight = 'Winter'
 }
 

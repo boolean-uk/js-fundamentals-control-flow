@@ -6,7 +6,7 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 // 1. Use conditional statements to set the value of the answerOne variable
 // to be true if the NUM variable is more than or equal to the LOWER variable
 // AND is less than or equal to the UPPER variable
-let answerOne 
+let answerOne
 if (NUM >= LOWER && NUM <= UPPER) {
   answerOne = true
 }
@@ -20,12 +20,11 @@ const STR = 'Hello'
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
 let answerTwo
-if (STR === 'Hello' || STR === 'Goodbye'){
+if (STR === 'Hello' || STR === 'Goodbye') {
   answerTwo = true
-}else {
+} else {
   answerTwo = false
 }
-
 
 // Task 3
 const AGE = 0
