@@ -2,6 +2,11 @@
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
+if (STR_ONE === 'Hello') {
+  answerOne = true
+}
+
+console.log('answerOne :>> ', answerOne)
 
 if (STR_ONE === 'Hello') {
   answerOne = true
@@ -15,6 +20,10 @@ console.log(answerOne)
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
+if (STR_TWO !== 'Hello') {
+  answerTwo = true
+}
+console.log('answerTwo :>> ', answerTwo)
 
 if (STR_TWO !== 'Hello') {
   answerTwo = true
