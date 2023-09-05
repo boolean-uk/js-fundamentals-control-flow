@@ -11,11 +11,11 @@ if (STR_ONE === 'Hello') {
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
-if (STR_TWO === 'Hello') {
-  answerTwo = false
+if (STR_TWO !== 'Hello') {
+  answerTwo = true
   console.log(answerTwo)
 } else {
-  answerTwo = true
+  answerTwo = false
   console.log(answerTwo)
 }
 

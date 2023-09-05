@@ -9,7 +9,6 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 let answerOne
 if (NUM >= LOWER && LOWER <= UPPER) {
   answerOne = true
-  console.log(answerOne)
 }
 
 // Task 2
@@ -23,10 +22,8 @@ const STR = null
 let answerTwo
 if (STR === 'Hello' || STR === 'Goodbye') {
   answerTwo = true
-  console.log(answerTwo)
 } else {
   answerTwo = false
-  console.log(answerTwo)
 }
 // Task 3
 const AGE = 0
@@ -46,19 +43,14 @@ const AGE = 0
 let answerThree
 if (AGE === 0) {
   answerThree = 'Baby'
-  console.log(answerThree)
 } else if (AGE > 0 && AGE < 5) {
   answerThree = 'Toddler'
-  console.log(answerThree)
 } else if (AGE >= 5 && AGE < 13) {
   answerThree = 'Child'
-  console.log(answerThree)
 } else if (AGE >= 13 && AGE < 20) {
   answerThree = 'Teenager'
-  console.log(answerThree)
 } else if (AGE > 20) {
   answerThree = 'Adult'
-  console.log(answerThree)
 }
 
 // Run the test after changing the AGE value to verify you've successfully

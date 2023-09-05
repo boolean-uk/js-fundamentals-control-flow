@@ -5,7 +5,7 @@ const didPass = false
 // "Well done, you passed!" if didPass is true, or "Sorry, try again!" if didPass
 // is false
 let answer = ''
-if (didPass) {
+if (didPass === true) {
   answer = 'Well done, you passed!'
   console.log(answer)
 } else if (didPass === false) {
