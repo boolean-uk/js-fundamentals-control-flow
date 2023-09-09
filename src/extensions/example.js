@@ -18,6 +18,7 @@ function doubleNumber(num) {
 }
 
 // 1., 2. change the exported value to be the name of the function you defined
+// Everything looks fine :)
 module.exports = {
   a: sayByeee,
   b: doubleNumber
