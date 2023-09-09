@@ -104,20 +104,21 @@ if (STR_EIGHT.length % 2 === 0) {
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
 const MONTH = 'January'
-
 let answerEight
-if ((MONTH === 'March'(MONTH)) === 'April' || MONTH === 'May') {
+if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
   answerEight = 'Spring'
-} else if ((MONTH === 'June'(MONTH)) === 'July' || MONTH === 'August') {
+} else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
   answerEight = 'Summer'
 } else if (
-  (MONTH === 'September'(MONTH)) === 'October' ||
+  MONTH === 'September' ||
+  MONTH === 'October' ||
   MONTH === 'November'
 ) {
   answerEight = 'Autumn'
 } else {
   answerEight = 'Winter'
 }
+console.log(answerEight)
 
 module.exports = {
   answerOne,
