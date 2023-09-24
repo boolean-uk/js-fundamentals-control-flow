@@ -26,7 +26,8 @@ if (STR === 'Hello' || STR === 'Goodbye') {
 }
 console.log('answerTwo:', answerTwo)
 // Task 3
-const AGE = 0
+const AGE = 5
+
 
 // 3. Use conditional statements to set the answerThree variable below to a
 // string value based on what the AGE variable is set to.
@@ -41,7 +42,19 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 let answerThree
-
+if (AGE === 1 && AGE <= 4) {
+  answerThree = 'Toddler'
+}
+if (AGE === 5 && AGE <= 12) {
+  answerThree = 'Child'
+}
+if (AGE === 13 && AGE <= 19) {
+  answerThree = 'Teenager'
+}
+if (AGE >= 20) {
+  answerThree = 'Adult'
+}
+console.log('He/she is a or an:', answerThree)
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
 
