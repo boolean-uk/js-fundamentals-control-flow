@@ -1,17 +1,16 @@
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 let answerOne
-if(STR_ONE == 'Hello'){
+if (STR_ONE === 'Hello') {
   answerOne = true
 }
-
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
 
-if(STR_TWO != 'Hello'){
+if (STR_TWO !== 'Hello') {
   answerTwo = true
 } else {
   answerTwo = false
@@ -24,7 +23,7 @@ const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
 let answerThree
 
-if(STR_THREE.length > STR_FOUR.length){
+if (STR_THREE.length > STR_FOUR.length) {
   answerThree = true
 } else {
   answerThree = false
@@ -37,7 +36,7 @@ const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
 let answerFour
 
-if (STR_FIVE.charAt(0).toLowerCase == STR_FIVE.charAt(8).toLowerCase){
+if (STR_FIVE.charAt(0).toLowerCase === STR_FIVE.charAt(8).toLowerCase) {
   answerFour = true
 } else answerFour = false
 
@@ -48,7 +47,7 @@ const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
 let answerFive
 
-if (STR_SIX.startsWith == STR_SIX.endsWith){
+if (STR_SIX.startsWith === STR_SIX.endsWith) {
   answerFive = true
 } else {
   answerFive = false
@@ -60,10 +59,8 @@ const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
 
-if (STR_SEVEN.length % 2 != 0){
+if (STR_SEVEN.length % 2 !== 0) {
   answerSix = STR_SEVEN.charAt(2)
-} else {
-  AnswerSix = false
 }
 
 // 7. Use conditional statements to set answerSeven to the middle two characters of
@@ -72,7 +69,7 @@ const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
 
-if (STR_EIGHT.length % 2 == 0){
+if (STR_EIGHT.length % 2 === 0) {
   answerSeven = STR_EIGHT.charAt(1) + STR_EIGHT.charAt(2)
 } else {
   answerSeven = false
@@ -94,21 +91,19 @@ const MONTH = 'January'
 
 let answerEight
 
-if (MONTH == 'December' || MONTH == 'January' || MONTH == "February"){
+if (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
   answerEight = 'Winter'
-} 
-
-if (MONTH == 'March' || MONTH == 'April' || MONTH == "May"){
+} else if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
   answerEight = 'Spring'
-} 
-
-if (MONTH == 'June' || MONTH == 'July' || MONTH == "August"){
+} else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
   answerEight = 'Summer'
-} 
-
-if (MONTH == 'September' || MONTH == 'October' || MONTH == "November"){
+} else if (
+  MONTH === 'September' ||
+  MONTH === 'October' ||
+  MONTH === 'November'
+) {
   answerEight = 'Autumn'
-} 
+}
 
 module.exports = {
   answerOne,
