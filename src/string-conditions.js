@@ -59,9 +59,9 @@ if(STR_SIX.charAt(0).toUpperCase!==STR_SIX.charAt(STR_SIX.length-1).toUpperCase)
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix;
-if(STR_SEVEN[2]%2!==0){
-  answerSix=STR_SEVEN[2]
-  console.log(answerSix)
+if(STR_SEVEN.length%2!==0){
+  answerSix=STR_SEVEN[Math.floor(STR_SEVEN.length/2)]
+  console.log('answerSix',answerSix,STR_SEVEN.length)
 } else {
   console.log(answerSix = false)
 }
