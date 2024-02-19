@@ -7,20 +7,20 @@ let didPass = true
 let answer;
   if (didPass === true){
     answer = "Well done, you passed"
-    console.log(answer)
+    console.log("answer:", answer)
   } else {didPass === flase
     answer = "Sorry, try again"
-    console.log(answer)}
+    console.log("answer", answer)}
 
 // 2. When you're done and the test passes, changing didPass to the opposite boolean
 // and run the test again to make sure it still passes
 let getResult;
   if (didPass !== true){
       answer = "Sorry, try again!"
-    console.log(answer)
+    console.log('getResult', answer)
   } else {didPass === true
     answer = "Well done, you passed!"
-    console.log(answer)}
+    console.log('getResult:', answer)}
 // Don't change the code below this line
 module.exports = {
   didPass,
