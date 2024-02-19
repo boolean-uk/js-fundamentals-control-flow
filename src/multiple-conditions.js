@@ -12,7 +12,7 @@ if (NUM >= LOWER && NUM <= UPPER) {
 } else {
   answerOne = false
 }
-console.log(answerOne);
+console.log(answerOne)
 
 // Task 2
 const STR = null
@@ -28,7 +28,7 @@ if (STR === 'Hello' || STR === 'Goodbye') {
 } else {
   answerTwo = false
 }
-console.log(answerTwo);
+console.log(answerTwo)
 
 // Task 3
 const AGE = 0
