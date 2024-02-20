@@ -7,5 +7,5 @@ let answer
 if (exampleValue >= 7) {
   answer = 'Correct!'
 }
-
+console.log(answer)
 module.exports = answer
