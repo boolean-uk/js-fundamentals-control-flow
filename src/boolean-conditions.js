@@ -12,7 +12,7 @@ if (didPass) {
 }
 // 2. When you're done and the test passes, changing didPass to the opposite boolean
 // and run the test again to make sure it still passes
-didPass = !didPass
+// didPass = !didPass
 // Don't change the code below this line
 module.exports = {
   didPass,
