@@ -42,15 +42,3 @@
 - Your solution is complete when the all the red `F`s have been replaced with green `.`s in your console, as shown below:
 
   ![](./img/test-pass.png)
-
-<!-- ## Extensions
-
-- Extension exercises can be found in the `src/extensions` directory with corresponding tests in the `spec/extensions` directory.
-
-- To run the tests for the extensions, you can either run spec files individually as follows:
-
-  `npx jasmine spec/extensions/<file>.spec.js`
-
-- Alternatively, run:
-
-  `npm run test-extensions` -->
