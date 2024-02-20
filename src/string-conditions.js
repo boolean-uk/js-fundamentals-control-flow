@@ -3,7 +3,7 @@ const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
 
-if(STR_ONE === 'Hello') {
+if (STR_ONE === 'Hello') {
   answerOne = true
 }
 
@@ -12,7 +12,7 @@ const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
 
-if(STR_TWO !== 'Hello') {
+if (STR_TWO !== 'Hello') {
   answerTwo = true
 }
 
@@ -23,7 +23,7 @@ const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
 let answerThree
 
-if(STR_THREE.length > STR_FOUR.length) {
+if (STR_THREE.length > STR_FOUR.length) {
   answerThree = true
 }
 
@@ -34,7 +34,10 @@ const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
 let answerFour
 
-if(STR_FIVE.charAt(0).toLowerCase() === STR_FIVE.charAt(STR_FIVE.length-1).toLowerCase()) {
+if (
+  STR_FIVE.charAt(0).toLowerCase() ===
+  STR_FIVE.charAt(STR_FIVE.length - 1).toLowerCase()
+) {
   answerFour = true
 }
 
@@ -45,10 +48,12 @@ const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
 let answerFive
 
-if(STR_SIX.charAt(0).toLowerCase() === STR_SIX.charAt(STR_SIX.length-1).toLowerCase()) {
+if (
+  STR_SIX.charAt(0).toLowerCase() ===
+  STR_SIX.charAt(STR_SIX.length - 1).toLowerCase()
+) {
   answerFive = true
-}
-else {
+} else {
   answerFive = false
 }
 
@@ -58,8 +63,8 @@ const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
 
-if(STR_SEVEN.length % 2 !== 0) {
-  answerSix = STR_SEVEN.charAt(STR_SEVEN.length/2)
+if (STR_SEVEN.length % 2 !== 0) {
+  answerSix = STR_SEVEN.charAt(STR_SEVEN.length / 2)
 }
 
 // 7. Use conditional statements to set answerSeven to the middle two characters of
@@ -68,8 +73,11 @@ const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
 
-if(STR_EIGHT.length % 2 === 0) {
-  answerSeven = STR_EIGHT.substring(STR_EIGHT.length/2-1, STR_EIGHT.length/2+1)
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven = STR_EIGHT.substring(
+    STR_EIGHT.length / 2 - 1,
+    STR_EIGHT.length / 2 + 1
+  )
   console.log(answerSeven)
 }
 
@@ -89,25 +97,25 @@ const MONTH = 'January'
 
 let answerEight
 
-switch(MONTH) {
+switch (MONTH) {
   case 'December':
   case 'January':
   case 'February':
-      answerEight = 'Winter'
-      break
+    answerEight = 'Winter'
+    break
   case 'March':
   case 'April':
   case 'May':
-      answerEight = 'Spring'
-      break
+    answerEight = 'Spring'
+    break
   case 'June':
   case 'July':
   case 'August':
-      answerEight = 'Summer'
-      break
+    answerEight = 'Summer'
+    break
   default:
-      answerEight = 'Autumn'
-      break
+    answerEight = 'Autumn'
+    break
 }
 
 module.exports = {

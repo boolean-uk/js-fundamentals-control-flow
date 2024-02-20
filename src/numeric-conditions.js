@@ -10,10 +10,9 @@ const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unu
 // or true if it is empty
 let answerOne
 
-if(ARRAY_ONE.length === 0) {
+if (ARRAY_ONE.length === 0) {
   answerOne = true
-}
-else{
+} else {
   answerOne = false
 }
 
@@ -21,24 +20,23 @@ else{
 // or true if it is empty
 let answerTwo
 
-if(ARRAY_TWO.length === 0) {
+if (ARRAY_TWO.length === 0) {
   answerTwo = true
-}
-else{
+} else {
   answerTwo = false
 }
 
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
 let answerThree
 
-if(NUM_ONE > NUM_TWO) {
+if (NUM_ONE > NUM_TWO) {
   answerThree = true
 }
 
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
 
-if(ARRAY_TWO.includes(NUM_ONE) || ARRAY_TWO.includes(NUM_TWO)) {
+if (ARRAY_TWO.includes(NUM_ONE) || ARRAY_TWO.includes(NUM_TWO)) {
   answerFour = true
 }
 

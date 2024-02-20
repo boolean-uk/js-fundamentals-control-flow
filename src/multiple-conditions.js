@@ -8,10 +8,9 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 // AND is less than or equal to the UPPER variable
 let answerOne
 
-if(NUM >= LOWER) {
+if (NUM >= LOWER) {
   answerOne = true
-}
-else {
+} else {
   answerOne = false
 }
 
@@ -25,10 +24,9 @@ const STR = null
 // to verify your code is correct
 let answerTwo
 
-if(STR === 'Hello' || STR === 'Goodbye') {
+if (STR === 'Hello' || STR === 'Goodbye') {
   answerTwo = true
-}
-else {
+} else {
   answerTwo = false
 }
 
@@ -49,19 +47,15 @@ const AGE = 0
 // 20+    | Adult
 let answerThree
 
-if(AGE === 0) {
+if (AGE === 0) {
   answerThree = 'Baby'
-}
-else if(AGE > 0 && AGE < 5) {
+} else if (AGE > 0 && AGE < 5) {
   answerThree = 'Toddler'
-}
-else if(AGE > 4 && AGE < 13) {
+} else if (AGE > 4 && AGE < 13) {
   answerThree = 'Child'
-}
-else if(AGE > 12 && AGE < 20) {
+} else if (AGE > 12 && AGE < 20) {
   answerThree = 'Teenager'
-}
-else {
+} else {
   answerThree = 'Adult'
 }
 
