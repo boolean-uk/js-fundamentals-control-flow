@@ -8,6 +8,12 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 // AND is less than or equal to the UPPER variable
 let answerOne
 
+if (NUM >= LOWER && NUM <= UPPER) {
+  answerOne = true
+} else {
+  answerOne = false
+}
+
 // Task 2
 const STR = null
 
@@ -16,7 +22,15 @@ const STR = null
 // Set answerTwo to false if it's neither of those
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
-let answerTwo
+switch (STR) {
+  case 'Hello':
+  case 'Goodbye':
+    answerTwo = true
+    break
+  default:
+    answerTwo = false
+    break
+}
 
 // Task 3
 const AGE = 0
@@ -34,6 +48,18 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 let answerThree
+
+if (AGE === 0) {
+  answerThree = 'Baby'
+} else if (AGE >= 1 && AGE <= 4) {
+  answerThree = 'Toddler'
+} else if (AGE >= 5 && AGE <= 12) {
+  answerThree = 'Child'
+} else if (AGE >= 13 && AGE <= 19) {
+  answerThree = 'Teenager'
+} else {
+  answerThree = 'Adult'
+}
 
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
