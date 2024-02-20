@@ -2,7 +2,7 @@
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
-if(STR_ONE === 'Hello'){
+if (STR_ONE === 'Hello') {
   answerOne = true
 }
 
@@ -10,7 +10,7 @@ if(STR_ONE === 'Hello'){
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
-if(STR_TWO !== 'Hello'){
+if (STR_TWO !== 'Hello') {
   answerTwo = true
 }
 
@@ -20,7 +20,7 @@ const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
 let answerThree
-if(STR_THREE.length > STR_FOUR.length){
+if (STR_THREE.length > STR_FOUR.length) {
   answerThree = true
 }
 
@@ -30,7 +30,10 @@ if(STR_THREE.length > STR_FOUR.length){
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
 let answerFour
-if(STR_FIVE.charAt(0).toLowerCase() === STR_FIVE.charAt(STR_FIVE.length - 1).toLowerCase()){
+if (
+  STR_FIVE.charAt(0).toLowerCase() ===
+  STR_FIVE.charAt(STR_FIVE.length - 1).toLowerCase()
+) {
   answerFour = true
 }
 
@@ -41,7 +44,10 @@ const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
 let answerFive
 
-if(STR_SIX.charAt(0).toLowerCase() === STR_SIX.charAt(STR_SIX.length - 1).toLowerCase()){
+if (
+  STR_SIX.charAt(0).toLowerCase() ===
+  STR_SIX.charAt(STR_SIX.length - 1).toLowerCase()
+) {
   answerFive = true
 } else {
   answerFive = false
@@ -52,7 +58,7 @@ if(STR_SIX.charAt(0).toLowerCase() === STR_SIX.charAt(STR_SIX.length - 1).toLowe
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix
-if(STR_SEVEN.length % 2 !== 0){
+if (STR_SEVEN.length % 2 !== 0) {
   answerSix = STR_SEVEN.charAt(STR_SEVEN.length / 2)
 }
 
@@ -61,8 +67,10 @@ if(STR_SEVEN.length % 2 !== 0){
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
-if(STR_EIGHT.length % 2 === 0){
-  answerSeven = STR_EIGHT.charAt(STR_EIGHT.length / 2 - 1) + STR_EIGHT.charAt(STR_EIGHT.length / 2)
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven =
+    STR_EIGHT.charAt(STR_EIGHT.length / 2 - 1) +
+    STR_EIGHT.charAt(STR_EIGHT.length / 2)
 }
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
@@ -80,16 +88,16 @@ if(STR_EIGHT.length % 2 === 0){
 const MONTH = 'January'
 
 let answerEight
-if(MONTH === 'March' || MONTH === 'April' || MONTH === 'May'){
+if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
   answerEight = 'Spring'
 }
-if(MONTH === 'June' || MONTH === 'July' || MONTH === 'August'){
+if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
   answerEight = 'Summer'
 }
-if(MONTH === 'September' || MONTH === 'October' || MONTH === 'November'){
+if (MONTH === 'September' || MONTH === 'October' || MONTH === 'November') {
   answerEight = 'Autumn'
 }
-if(MONTH === 'December' || MONTH === 'January' || MONTH === 'February'){
+if (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
   answerEight = 'Winter'
 }
 
