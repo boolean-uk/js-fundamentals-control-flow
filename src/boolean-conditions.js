@@ -1,7 +1,6 @@
 // Initialise the didPass variable with a boolean value
-let didPass = false
-
-if (didPass !== true) {
+const didPass = true
+if (didPass === false) {
   console.log('Well done, you passed!')
 } else {
   console.log('Sorry, try again!')
