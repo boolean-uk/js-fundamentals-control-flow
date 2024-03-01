@@ -69,7 +69,7 @@ let answerFive;
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
 let answerSix;
-  if (STR_SEVEN % 2 !== 0){
+  if (STR_SEVEN.length % 2 !== 0){
     answerSix = STR_SEVEN.charAt(2)
     console.log("answerSix", answerSix)
   } 
@@ -79,7 +79,7 @@ let answerSix;
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven;
-  if (STR_EIGHT % 2 === 0) {
+  if (STR_EIGHT.length % 2 === 0) {
     answerSeven = STR_EIGHT.substring(1, 3)
   }
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
