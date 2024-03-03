@@ -21,10 +21,13 @@ const STR = null
 // Set answerTwo to false if it's neither of those
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
-let answerTwo
-
+const answerTwo = false
+if (STR === 'Goodbye') {
+  console.log(answerTwo)
+} else {
+  console.log(answerTwo)
+}
 // Task 3
-const AGE = 0
 
 // 3. Use conditional statements to set the answerThree variable below to a
 // string value based on what the AGE variable is set to.
@@ -38,8 +41,19 @@ const AGE = 0
 // 5-12   | Child
 // 13-19  | Teenager
 // 20+    | Adult
-let answerThree
-
+const AGE = 0
+const answerThree = ['Baby', 'Toddler', 'Child', 'Teenager', 'Adult']
+if (AGE <= 0) {
+  console.log(answerThree[0])
+} else if (AGE >= 1 && AGE <= 4) {
+  console.log(answerThree[1])
+} else if (AGE >= 5 && AGE <= 12) {
+  console.log(answerThree[2])
+} else if (AGE >= 13 && AGE <= 19) {
+  console.log(answerThree[3])
+} else if (AGE >= 20) {
+  console.log(answerThree[4])
+}
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
 
