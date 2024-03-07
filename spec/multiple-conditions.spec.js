@@ -6,7 +6,7 @@ const {
   answerThree
 } = require('../src/multiple-conditions')
 
-describe('answerOne', () => {
+describe('answerOne1', () => {
   it('should be true', () => {
     expect(answerOne).toEqual(true)
   })

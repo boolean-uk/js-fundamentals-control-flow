@@ -5,7 +5,7 @@ const {
   answerFour
 } = require('../src/numeric-conditions')
 
-describe('answerOne', () => {
+describe('answerOne2', () => {
   it('should be true', () => {
     expect(answerOne).toEqual(true)
   })
@@ -17,13 +17,13 @@ describe('answerTwo', () => {
   })
 })
 
-describe('answerThree', () => {
+describe('answerThree2', () => {
   it('should be true', () => {
     expect(answerThree).toEqual(true)
   })
 })
 
-describe('answerFour', () => {
+describe('answerFour2', () => {
   it('should be true', () => {
     expect(answerFour).toEqual(true)
   })
