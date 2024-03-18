@@ -26,7 +26,6 @@ if (STR === 'Goodbye') {
   console.log(answerTwo)
 } else {
   console.log(answerTwo)
-}
 // Task 3
 
 // 3. Use conditional statements to set the answerThree variable below to a
