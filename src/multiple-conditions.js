@@ -43,18 +43,20 @@ console.log(answerTwo)
 // 13-19  | Teenager
 // 20+    | Adult
 const AGE = 0
-const answerThree = ['Baby', 'Toddler', 'Child', 'Teenager', 'Adult']
+let answerThree = ['Baby', 'Toddler', 'Child', 'Teenager', 'Adult']
 if (AGE <= 0) {
-  console.log(answerThree[0])
+  answerThree = 'Baby'
 } else if (AGE >= 1 && AGE <= 4) {
-  console.log(answerThree[1])
+  answerThree = 'Toddler'
 } else if (AGE >= 5 && AGE <= 12) {
-  console.log(answerThree[2])
+  answerThree = 'Child'
 } else if (AGE >= 13 && AGE <= 19) {
-  console.log(answerThree[3])
+  answerThree = 'Teenager'
 } else if (AGE >= 20) {
-  console.log(answerThree[4])
+  answerThree = 'Adult'
 }
+
+console.log(answerThree)
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
 
