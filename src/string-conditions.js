@@ -30,9 +30,8 @@ console.log(answerThree)
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
 let answerFour
-const firstChar = STR_FIVE.charAt(0)
-const lastChar = STR_FIVE.charAt(STR_FIVE.length - 1)
-if (firstChar === lastChar) {
+
+if (STR_FIVE.startsWith('A') && STR_FIVE.endsWith('a')) {
   answerFour = true
 } else {
   answerFour = false
@@ -43,20 +42,31 @@ console.log(answerFour)
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive
-
+let answerFive = true
+if (STR_SIX.startsWith('J') && STR_SIX.endsWith('j')) {
+  answerFive = true
+} else {
+  answerFive = false
+}
+console.log(answerFive)
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
-let answerSix
-
+let answerSix = []
+if (STR_SEVEN.length % 2 === 1) {
+  answerSix = STR_SEVEN.charAt(2)
+}
+console.log(answerSix)
 // 7. Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
-
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven = STR_EIGHT.substring(1, 3)
+}
+console.log(answerSeven)
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
 //
 // For example, if MONTH is 'January', answerEight should be 'Winter'
@@ -69,10 +79,21 @@ let answerSeven
 // December to February: Winter
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
-const MONTH = 'January'
-
 let answerEight
-
+const MONTH = 'July'
+if (MONTH.valueOf('December' || 'January' || 'February')) {
+  answerEight = 'Winter'
+}
+if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
+  answerEight = 'Spring'
+}
+if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
+  answerEight = 'Summer'
+}
+if (MONTH === 'September' || MONTH === 'October' || MONTH === 'November') {
+  answerEight = 'Autumn'
+}
+console.log(answerEight)
 module.exports = {
   answerOne,
   answerTwo,
